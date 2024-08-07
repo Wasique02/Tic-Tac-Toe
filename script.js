@@ -16,10 +16,16 @@ const winningPattern = [
     [6,7,8],
 ];
 
-const resetGame = ()=>{
+const newGame = ()=>{
     turnO = true;
     enableBoxes();
     winnerBox.classList.add("hide");
+}
+const resetGame =()=>{
+    for(box of boxes){
+        box.disabled = false;
+        box.innerText = "";
+    }
 }
 boxes.forEach((box) => {
     box.addEventListener("click",()=>{
@@ -66,5 +72,5 @@ checkWinner = ()=>{
     }
 }
 
-newGameBtn.addEventListener("click", resetGame);
+newGameBtn.addEventListener("click", newGame);
 resetBtn.addEventListener("click", resetGame);
