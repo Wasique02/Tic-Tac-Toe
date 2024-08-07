@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin: 25px;
+}
+.game{
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 90px;
+    width: 90px;
+    font-size: 30px;
+    margin: 5px;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+.winner-box{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.hide{
+    display: none;
+}
+.btn{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: white;
+}
